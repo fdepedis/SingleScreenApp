@@ -1,110 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="it.flaviodepedis.singlescreenapp.MainActivity">
 
-    <ImageView
-        android:id="@+id/imgBackground"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:src="@drawable/androidweb"
-        android:scaleType="centerCrop"
-        android:layout_alignParentTop="true"/>
-
-    <TextView
-        android:id="@+id/presentationTitle"
-        style="@style/tvDetailStyle"
-        android:textAppearance="?android:textAppearanceLarge"
-        android:text="@string/presentationTitle" />
-
-    <TextView
-        android:id="@+id/jobTitle"
-        style="@style/tvDetailStyle"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:layout_below="@id/presentationTitle"
-        android:text="@string/jobTitle" />
-
-    <LinearLayout
-        android:id="@+id/details"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_below="@id/imgBackground"
-        android:background="#e0e0e0"
-        android:paddingTop="20dp"
-        android:paddingLeft="30dp">
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/androidweb" />
+
+        <TextView
+            android:id="@+id/presentationTitle"
+            style="@style/tvDetailStyle"
+            android:text="@string/presentationTitle"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/jobTitle"
+            style="@style/tvDetailStyle"
+            android:layout_below="@id/presentationTitle"
+            android:text="@string/jobTitle"
+            android:textAppearance="?android:textAppearanceMedium" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imgBackground"
+            android:background="#e0e0e0"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
 
-            <ImageView
-                android:id="@+id/imgLocation"
-                style="@style/imgDetailStyle"
-                android:src="@drawable/ic_location_on_black_48dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/location"
-                style="@style/tvDetailStyle"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:text="@string/location" />
+                <ImageView
+                    android:id="@+id/imgLocation"
+                    style="@style/imgDetailStyle"
+                    android:src="@drawable/ic_location_on_black_48dp" />
+
+                <TextView
+                    android:id="@+id/location"
+                    style="@style/tvDetailStyle"
+                    android:text="@string/location"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgPhone"
+                    style="@style/imgDetailStyle"
+                    android:src="@drawable/ic_call_black_48dp" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    style="@style/tvDetailStyle"
+                    android:text="@string/phone"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgMail"
+                    style="@style/imgDetailStyle"
+                    android:src="@drawable/ic_mail_outline_black_48dp" />
+
+                <TextView
+                    android:id="@+id/email"
+                    style="@style/tvDetailStyle"
+                    android:text="@string/email"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgWeb"
+                    style="@style/imgDetailStyle"
+                    android:src="@drawable/ic_public_black_48dp" />
+
+                <TextView
+                    android:id="@+id/web"
+                    style="@style/tvDetailStyle"
+                    android:text="@string/webSite"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/imgPhone"
-                style="@style/imgDetailStyle"
-                android:src="@drawable/ic_call_black_48dp" />
+    </RelativeLayout>
 
-            <TextView
-                android:id="@+id/phone"
-                style="@style/tvDetailStyle"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:text="@string/phone" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imgMail"
-                style="@style/imgDetailStyle"
-                android:src="@drawable/ic_mail_outline_black_48dp" />
-
-            <TextView
-                android:id="@+id/email"
-                style="@style/tvDetailStyle"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:text="@string/email" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imgWeb"
-                style="@style/imgDetailStyle"
-                android:src="@drawable/ic_public_black_48dp" />
-
-            <TextView
-                android:id="@+id/web"
-                style="@style/tvDetailStyle"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:text="@string/webSite" />
-        </LinearLayout>
-
-    </LinearLayout>
-
-</RelativeLayout>
+</ScrollView>
