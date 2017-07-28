@@ -8,15 +8,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-
     <!--Base for textView in up Activity -->
-    <style name="imageSide">
+    <style name="tvDetailStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">10dp</item>
-        <item name="android:layout_marginStart">10dp</item>
         <item name="android:fontFamily">sans-serif"</item>
-
     </style>
+
+    <style name="imgDetailStyle">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+
 
 </resources>

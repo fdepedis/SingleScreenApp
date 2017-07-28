@@ -1,7 +1,22 @@
 <resources>
+    <!-- The string for app name -->
     <string name="app_name">My Single Screen App</string>
+
+    <!-- The string for title of presentation name -->
     <string name="presentationTitle">I\'m Flavio!!!</string>
+
+    <!-- The string for job title -->
     <string name="jobTitle">A new Android Enthusiast Developer</string>
 
-    
+    <!-- The string for the location -->
+    <string name="location">City: Roma - 00144</string>
+
+    <!-- The string for phone number -->
+    <string name="phone">Phone: +39 320.1122345</string>
+
+    <!-- The string for email -->
+    <string name="email">Email: flavio.depedis@gmail.com</string>
+
+    <!-- The string for web site reference -->
+    <string name="webSite">Web: linkedin.com/in/flaviodepedis</string>
 </resources>
