@@ -3,7 +3,7 @@
     <string name="app_name">My Single Screen App</string>
 
     <!-- The string for title of presentation name -->
-    <string name="presentationTitle">I\'m Flavio!!!</string>
+    <string name="presentationTitle">Hi, I\'m Flavio!!!</string>
 
     <!-- The string for job title -->
     <string name="jobTitle">A new Android Enthusiast Developer</string>
