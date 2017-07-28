@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">SingleScreenApp</string>
+    <string name="app_name">My Single Screen App</string>
+    <string name="presentationTitle">I\'m Flavio!!!</string>
+    <string name="jobTitle">A new Android Enthusiast Developer</string>
+
+    
 </resources>
