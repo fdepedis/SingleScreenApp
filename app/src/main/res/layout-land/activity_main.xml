@@ -21,7 +21,7 @@
         <TextView
             android:id="@+id/presentationTitle"
             style="@style/tvDetailStyle"
-            android:text="Landascape handle layout"
+            android:text="Layout to manage landscape"
             android:textAppearance="?android:textAppearanceLarge" />
 
         <TextView
